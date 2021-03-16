@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// #region ::: IMPORT
+import { FC, useEffect, useRef } from "react";
+import { ConversationalForm } from "conversational-form";
+import settings from "./formSettings.json";
+// #endregion
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const App: FC = (): JSX.Element => {
+  const ref = useRef<HTMLDivElement>(null);
 
-export default App;
+  const onAttachToReport = (data: any) => console.log(data);
+
+  // const onAbortRequestAssistance = () => {
+  //   throw new Error("Error on send report");
+  // };
+
+  const onSubmit = () => {
+    const formData = conversationalForm.getFormData(true);
+    onAttachToReport(formData);
+  };
+
+  const conversationalForm = ConversationalForm.startTheConversation({
+    options: {
+      submitCallback: onSubmit,
+      preventAutoFocus: true,
+    },
+    tags: settings.form,
+  });
+
+  useEffect(() => {
+    if (ref && ref.current) ref.current.appendChild(conversationalForm.el);
+  }, [conversationalForm]);
+
+  return <div ref={ref}></div>;
+};

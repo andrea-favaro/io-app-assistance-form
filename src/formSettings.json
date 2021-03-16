@@ -1,0 +1,37 @@
+{
+  "form": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "firstname",
+      "cf-questions": "What is your firstname?"
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "lastname",
+      "cf-questions": "Hello {previous-answer}, what is your lastname?"
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "name": "image-preference",
+      "cf-label": "Immagine 1",
+      "cf-image": "https://space10io-zhjgfejx8sl.netdna-ssl.com/content/uploads/2016/10/julesslutsky1-400x265.jpg"
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "name": "image-preference",
+      "cf-label": "Immagine 2",
+      "cf-image": "https://space10io-zhjgfejx8sl.netdna-ssl.com/content/uploads/2016/10/julesslutsky1-400x265.jpg"
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "name": "image-preference",
+      "cf-label": "Immagine 3",
+      "cf-image": "https://space10io-zhjgfejx8sl.netdna-ssl.com/content/uploads/2016/10/julesslutsky1-400x265.jpg"
+    }
+  ]
+}
