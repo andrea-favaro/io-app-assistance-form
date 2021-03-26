@@ -1,0 +1,49 @@
+{
+  "stepList": [
+    {
+      "showIfId": "first-6",
+      "showIfValue": "Satispay",
+      "id": "satispay-1",
+      "question": "Il metodo di pagamento risulta attivato per il Cashback in app IO nella sezione “Attivati su altri canali”?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "satispay-1",
+      "showIfValue": "No",
+      "id": "satispay-2",
+      "question": "Hai attivato il Cashback di Sato sull’app di Satispay?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "satispay-2",
+      "showIfValue": "Si",
+      "id": "satispay-3",
+      "question": "Vedi il metodo tra quelli “Attivati su altri canali” in app IO?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "satispay-1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia della ricevuta Satispay relativa alla tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "satispay-2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "Al momento è possibile attivare Satispay al Cashback solo dall’app di Satispay. Ti invitiamo a farlo."
+    },
+    {
+      "showIfId": "satispay-3",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia della ricevuta Satispay relativa alla tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "satispay-3",
+      "showIfValue": "No",
+      "end": true,
+      "message": "Se non vedi il metodo tra quelli “Attivati su altri canali” in app IO, ti invitiamo a rivolgerti all’assistenza dell’app Satispay per capire il motivo."
+    }
+  ]
+}

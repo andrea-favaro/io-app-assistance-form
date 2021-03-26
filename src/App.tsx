@@ -1,7 +1,7 @@
 // #region ::: IMPORT
-import { FC, useEffect, useRef } from "react";
+import { FC, useCallback, useEffect, useRef } from "react";
 import { ConversationalForm } from "conversational-form";
-import settings from "./formSettings.json";
+import { formList } from "./form";
 // #endregion
 
 export const App: FC = (): JSX.Element => {
@@ -9,26 +9,21 @@ export const App: FC = (): JSX.Element => {
 
   const onAttachToReport = (data: any) => console.log(data);
 
-  // const onAbortRequestAssistance = () => {
-  //   throw new Error("Error on send report");
-  // };
+  // WAITING FOR INTEGRATION WITH APP
+  // const onAbortRequestAssistance = () => {};
 
-  const onSubmit = () => {
-    const formData = conversationalForm.getFormData(true);
-    onAttachToReport(formData);
-  };
+  const initConversationalForm = useCallback(() => {
+    const CF = ConversationalForm.startTheConversation({
+      options: {
+        submitCallback: () => onAttachToReport(CF.getFormData(true)),
+        preventAutoFocus: true,
+      },
+      tags: formList,
+    });
+    if (ref && ref.current) ref.current.appendChild(CF.el);
+  }, []);
 
-  const conversationalForm = ConversationalForm.startTheConversation({
-    options: {
-      submitCallback: onSubmit,
-      preventAutoFocus: true,
-    },
-    tags: settings.form,
-  });
-
-  useEffect(() => {
-    if (ref && ref.current) ref.current.appendChild(conversationalForm.el);
-  }, [conversationalForm]);
+  useEffect(() => initConversationalForm(), [initConversationalForm]);
 
   return <div ref={ref}></div>;
 };

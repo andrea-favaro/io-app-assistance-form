@@ -1,0 +1,77 @@
+import { TagFieldset, TagInput, TagMessageEnd } from "../declarations/form";
+import { Step } from "../declarations/step";
+
+const onGenerateTagInput = (step: Step) => {
+  const { id, question, answers } = step;
+
+  const tag: TagInput = {
+    "cf-questions": question,
+    name: id,
+    tag: "input",
+    type: "radio",
+    value: `${answers[0].toLowerCase()}-${id}`,
+    "cf-label": answers[0],
+  };
+
+  return tag;
+};
+
+const onGenerateTagFieldset = (step: Step) => {
+  const { id, question, answers, showIfId, showIfValue } = step;
+
+  const children: TagInput[] = answers.map((answer) => {
+    if (showIfId && showIfValue) {
+      return {
+        [`cf-conditional-${showIfId}`]: `${showIfValue?.toLowerCase()}-${showIfId}`,
+        name: id,
+        tag: "input",
+        type: "radio",
+        value: `${answer.toLowerCase()}-${id}`,
+        "cf-label": answer,
+      };
+    } else
+      return {
+        name: id,
+        tag: "input",
+        type: "radio",
+        value: `${answer.toLowerCase()}-${id}`,
+        "cf-label": answer,
+      };
+  });
+  const tag: TagFieldset = {
+    "cf-questions": question,
+    tag: "fieldset",
+    children,
+  };
+
+  return tag;
+};
+
+const onGenerateTagMessageEnd = (step: Step) => {
+  console.log(step);
+  const { message, showIfId, showIfValue } = step;
+
+  const tag: TagMessageEnd = {
+    [`cf-conditional-${showIfId}`]: `${showIfValue?.toLowerCase()}-${showIfId}`,
+    "cf-questions": message as string,
+    tag: "cf-robot-message",
+  };
+
+  return tag;
+};
+
+export const utilityFormGenerator = (
+  stepList: Step[]
+): Array<TagInput | TagFieldset> => {
+  return stepList.reduce((initialList: any[], step: Step) => {
+    let tag = {};
+    if (step.end) tag = onGenerateTagMessageEnd(step);
+    else {
+      if (step.answers.length === 1) tag = onGenerateTagInput(step);
+      if (step.answers.length > 1) tag = onGenerateTagFieldset(step);
+    }
+    const newList = [...initialList, tag];
+
+    return newList;
+  }, []);
+};

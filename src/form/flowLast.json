@@ -1,0 +1,260 @@
+{
+  "stepList": [
+    {
+      "showIfId": "first-5",
+      "showIfValue": "American Express",
+      "id": "last-american-express-1",
+      "question": "Sei sicuro di aver effettuato l’acquisto dalla mezzanotte del giorno dopo l’attivazione al Cashback del metodo di pagamento che hai utilizzato?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "mobile-3",
+      "showIfValue": "Si",
+      "id": "last-mobile-1",
+      "question": "Sei sicuro di aver effettuato l’acquisto dalla mezzanotte del giorno dopo l’attivazione al Cashback del metodo di pagamento che hai utilizzato?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "bancomat-pay-1",
+      "showIfValue": "Si",
+      "id": "last-bancomat-pay-1_1",
+      "question": "Sei sicuro di aver effettuato l’acquisto dalla mezzanotte del giorno dopo l’attivazione al Cashback del metodo di pagamento che hai utilizzato?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "bancomat-pay-3",
+      "showIfValue": "Si",
+      "id": "last-bancomat-pay-3_1",
+      "question": "Sei sicuro di aver effettuato l’acquisto dalla mezzanotte del giorno dopo l’attivazione al Cashback del metodo di pagamento che hai utilizzato?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "credit-card-1",
+      "showIfValue": "Si",
+      "id": "last-credit-card-1_1",
+      "question": "Sei sicuro di aver effettuato l’acquisto dalla mezzanotte del giorno dopo l’attivazione al Cashback del metodo di pagamento che hai utilizzato?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "credit-card-4",
+      "showIfValue": "Si",
+      "id": "last-credit-card-4_1",
+      "question": "Sei sicuro di aver effettuato l’acquisto dalla mezzanotte del giorno dopo l’attivazione al Cashback del metodo di pagamento che hai utilizzato?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "pago-bancomat-4",
+      "showIfValue": "Si",
+      "id": "last-pago-bancomat-4_1",
+      "question": "Sei sicuro di aver effettuato l’acquisto dalla mezzanotte del giorno dopo l’attivazione al Cashback del metodo di pagamento che hai utilizzato?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "pago-bancomat-2",
+      "showIfValue": "PagoBANCOMAT",
+      "id": "last-pago-bancomat-2_1",
+      "question": "Sei sicuro di aver effettuato l’acquisto dalla mezzanotte del giorno dopo l’attivazione al Cashback del metodo di pagamento che hai utilizzato?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-american-express-1",
+      "showIfValue": "No",
+      "id": "last-american-express-2",
+      "question": "Gli acquisti validi ai fini del Cashback sono quelli effettuati a partire dalla mezzanotte del giorno successivo all’attivazione del metodo di pagamento. Hai lo scontrino POS per poterlo verificare?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-mobile-1",
+      "showIfValue": "No",
+      "id": "last-mobile-2",
+      "question": "Gli acquisti validi ai fini del Cashback sono quelli effettuati a partire dalla mezzanotte del giorno successivo all’attivazione del metodo di pagamento. Hai lo scontrino POS per poterlo verificare?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-bancomat-pay-1_1",
+      "showIfValue": "No",
+      "id": "last-bancomat-pay-1_2",
+      "question": "Gli acquisti validi ai fini del Cashback sono quelli effettuati a partire dalla mezzanotte del giorno successivo all’attivazione del metodo di pagamento. Hai lo scontrino POS per poterlo verificare?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-bancomat-pay-3_1",
+      "showIfValue": "No",
+      "id": "last-bancomat-pay-3_2",
+      "question": "Gli acquisti validi ai fini del Cashback sono quelli effettuati a partire dalla mezzanotte del giorno successivo all’attivazione del metodo di pagamento. Hai lo scontrino POS per poterlo verificare?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-credit-card-1_1",
+      "showIfValue": "No",
+      "id": "last-credit-card-1_2",
+      "question": "Gli acquisti validi ai fini del Cashback sono quelli effettuati a partire dalla mezzanotte del giorno successivo all’attivazione del metodo di pagamento. Hai lo scontrino POS per poterlo verificare?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-credit-card-4_1",
+      "showIfValue": "No",
+      "id": "last-credit-card-4_2",
+      "question": "Gli acquisti validi ai fini del Cashback sono quelli effettuati a partire dalla mezzanotte del giorno successivo all’attivazione del metodo di pagamento. Hai lo scontrino POS per poterlo verificare?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-pago-bancomat-4_1",
+      "showIfValue": "No",
+      "id": "last-pago-bancomat-4_2",
+      "question": "Gli acquisti validi ai fini del Cashback sono quelli effettuati a partire dalla mezzanotte del giorno successivo all’attivazione del metodo di pagamento. Hai lo scontrino POS per poterlo verificare?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-pago-bancomat-2_1",
+      "showIfValue": "No",
+      "id": "last-pago-bancomat-2_2",
+      "question": "Gli acquisti validi ai fini del Cashback sono quelli effettuati a partire dalla mezzanotte del giorno successivo all’attivazione del metodo di pagamento. Hai lo scontrino POS per poterlo verificare?",
+      "answers": ["Si", "No"]
+    },
+    {
+      "showIfId": "last-american-express-2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. In assenza dello scontrino POS non è possibile effettuare nessuna verifica"
+    },
+    {
+      "showIfId": "last-mobile-2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. In assenza dello scontrino POS non è possibile effettuare nessuna verifica"
+    },
+    {
+      "showIfId": "last-bancomat-pay-1_2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. In assenza dello scontrino POS non è possibile effettuare nessuna verifica"
+    },
+    {
+      "showIfId": "last-bancomat-pay-3_2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. In assenza dello scontrino POS non è possibile effettuare nessuna verifica"
+    },
+    {
+      "showIfId": "last-credit-card-1_2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. In assenza dello scontrino POS non è possibile effettuare nessuna verifica"
+    },
+    {
+      "showIfId": "last-credit-card-4_2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. In assenza dello scontrino POS non è possibile effettuare nessuna verifica"
+    },
+    {
+      "showIfId": "last-pago-bancomat-4_2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. In assenza dello scontrino POS non è possibile effettuare nessuna verifica"
+    },
+    {
+      "showIfId": "last-pago-bancomat-2_2",
+      "showIfValue": "No",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. In assenza dello scontrino POS non è possibile effettuare nessuna verifica"
+    },
+    {
+      "showIfId": "last-american-express-2",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-mobile-2",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-bancomat-pay-1_2",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-bancomat-pay-3_2",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-credit-card-1_2",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-credit-card-4_2",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-pago-bancomat-4_2",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-pago-bancomat-2_2",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-american-express-1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-mobile-1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-bancomat-pay-1_1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-bancomat-pay-3_1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-credit-card-1_1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-credit-card-4_1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-pago-bancomat-4_1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    },
+    {
+      "showIfId": "last-pago-bancomat-2_1",
+      "showIfValue": "Si",
+      "end": true,
+      "message": "PagoPA non ha visibilità sui dati delle transazioni gestite dagli Acquirer e può solo chiedere a questi soggetti di effettuare specifici controlli. Pertanto ti invitiamo ad aprire una segnalazione fornendoci copia dello scontrino POS (non il documento commerciale di vendita o prestazione) che deve riportare l’indicazione dell’Acquirer che ha gestito la tua transazione; solo così ci sarà possibile sollecitare delle verifiche sul tuo caso."
+    }
+  ]
+}
