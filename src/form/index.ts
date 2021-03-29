@@ -23,9 +23,7 @@ export const formList = [
   ...flowMobile,
   ...flowSatispay,
   ...flowBancomatPay,
-  ...flowCreditCard,
   ...flowPagoBancomat,
+  ...flowCreditCard,
   ...flowLast,
 ];
-
-console.log(formList);

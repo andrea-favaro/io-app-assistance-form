@@ -48,7 +48,6 @@ const onGenerateTagFieldset = (step: Step) => {
 };
 
 const onGenerateTagMessageEnd = (step: Step) => {
-  console.log(step);
   const { message, showIfId, showIfValue } = step;
 
   const tag: TagMessageEnd = {
