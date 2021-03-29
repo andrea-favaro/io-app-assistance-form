@@ -2,8 +2,8 @@ export interface Step {
   id: string;
   question: string;
   answers: string[];
-  showIfId: string;
-  showIfValue: string;
+  previousStepId: string;
+  previousStepValue: string;
   message?: string;
   end?: boolean;
 }

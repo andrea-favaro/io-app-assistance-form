@@ -17,12 +17,12 @@ const onGenerateTagInput = (step: Step) => {
 };
 
 const onGenerateTagFieldset = (step: Step) => {
-  const { id, question, answers, showIfId, showIfValue } = step;
+  const { id, question, answers, previousStepId, previousStepValue } = step;
 
   const children: TagInput[] = answers.map((answer) => {
-    if (showIfId && showIfValue) {
+    if (previousStepId && previousStepValue) {
       return {
-        [`cf-conditional-${showIfId}`]: `${showIfValue?.toLowerCase()}-${showIfId}`,
+        [`cf-conditional-${previousStepId}`]: `${previousStepValue?.toLowerCase()}-${previousStepId}`,
         name: id,
         tag: "input",
         type: "radio",
@@ -48,10 +48,10 @@ const onGenerateTagFieldset = (step: Step) => {
 };
 
 const onGenerateTagMessageEnd = (step: Step) => {
-  const { message, showIfId, showIfValue } = step;
+  const { message, previousStepId, previousStepValue } = step;
 
   const tag: TagMessageEnd = {
-    [`cf-conditional-${showIfId}`]: `${showIfValue?.toLowerCase()}-${showIfId}`,
+    [`cf-conditional-${previousStepId}`]: `${previousStepValue?.toLowerCase()}-${previousStepId}`,
     "cf-questions": message as string,
     tag: "cf-robot-message",
   };
