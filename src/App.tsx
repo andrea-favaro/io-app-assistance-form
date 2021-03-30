@@ -25,5 +25,5 @@ export const App: FC = (): JSX.Element => {
 
   useEffect(() => initConversationalForm(), [initConversationalForm]);
 
-  return <div ref={ref}></div>;
+  return <div id="cf-context" className="wrapper" ref={ref}></div>;
 };
