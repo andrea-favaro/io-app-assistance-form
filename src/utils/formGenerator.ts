@@ -2,18 +2,27 @@ import { TagFieldset, TagInput, TagMessageEnd } from "../declarations/form";
 import { Step } from "../declarations/step";
 
 const onGenerateTagInput = (step: Step) => {
-  const { id, question, answers } = step;
+  const { id, question, answers, previousStepId, previousStepValue } = step;
 
-  const tag: TagInput = {
-    "cf-questions": question,
-    name: id,
-    tag: "input",
-    type: "radio",
-    value: `${answers[0].toLowerCase()}-${id}`,
-    "cf-label": answers[0],
-  };
-
-  return tag;
+  if (previousStepId && previousStepValue) {
+    return {
+      [`cf-conditional-${previousStepId}`]: `${previousStepValue?.toLowerCase()}-${previousStepId}`,
+      "cf-questions": question,
+      name: id,
+      tag: "input",
+      type: "radio",
+      value: `${answers[0].toLowerCase()}-${id}`,
+      "cf-label": answers[0],
+    };
+  } else
+    return {
+      "cf-questions": question,
+      name: id,
+      tag: "input",
+      type: "radio",
+      value: `${answers[0].toLowerCase()}-${id}`,
+      "cf-label": answers[0],
+    };
 };
 
 const onGenerateTagFieldset = (step: Step) => {

@@ -1,11 +1,15 @@
 {
   "stepList": [
     {
+      "previousStepId": "flow-select",
+      "previousStepValue": "Cashback",
       "id": "first-1",
       "question": "Non vedi una transazione?",
       "answers": ["Si"]
     },
     {
+      "previousStepId": "first-1",
+      "previousStepValue": "Si",
       "id": "first-2",
       "question": "Hai fatto un acquisto online?",
       "answers": ["Si", "No"]
