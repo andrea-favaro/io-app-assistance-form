@@ -14,7 +14,7 @@ _io-app-assistance-form_ provides first level automatic assistance, through a co
 ## How to run the app in the development mode
 
 1. Move into your actual work directory (replace `<work-dir>`):
-   Example: cd <work-dir>/io-app-assistance-form
+   Example: cd `<work-dir>/io-app-assistance-form`
 2. Launch `npm install` in your terminal, wait for the installation of the packages to finish.
 3. Launch `npm start`
 
