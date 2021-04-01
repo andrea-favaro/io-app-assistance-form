@@ -5,7 +5,6 @@ _io-app-assistance-form_ provides first level automatic assistance, through a co
 ## Must have
 
 - [Node](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/)
 
 ## Main technologies used
 
@@ -24,7 +23,13 @@ If you want to stop the conversational form with an end message, based on an ans
 
 ## Useful scripts
 
-- `yarn start` runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
-- `yarn build` create a minified bundle
-- `yarn test` launches the test runner in the interactive watch mode
-- `yarn eject` eject webpack configuration **- TO AVOID -**
+- `npm start` runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+- `npm run build` create a minified bundle
+- `npm test` launches the test runner in the interactive watch mode
+- `npm run eject` eject webpack configuration **- TO AVOID -**
+
+## How to deploy the app
+
+This step explains how to deploy your app on a server, this makes _io-app-assistance-form_ public, allowing other users to see your app using a URL.
+First of all, launch `npm run build` in your terminal, this creates a build folder inside the root directory, which bundles your app and minifies it into HTML, CSS, and JavaScript files.
+Now, you can use various platforms for deploying your build folder.
