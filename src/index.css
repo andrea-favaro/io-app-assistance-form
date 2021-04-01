@@ -94,3 +94,18 @@ body {
   background: var(--primary) !important;
   border: 1px solid var(--primary);
 }
+
+/* CONVERSATIONAL FORM - WRAPPER ANSWERS */
+.wrapper .conversational-form cf-list {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.wrapper .conversational-form cf-list-button:after,
+.wrapper .conversational-form cf-list-button:before {
+  opacity: 0;
+}
+
+.wrapper .conversational-form cf-list-button:after {
+  background-image: none;
+}
