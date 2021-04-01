@@ -11,6 +11,15 @@ _io-app-assistance-form_ provides first level automatic assistance, through a co
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 
+## How to run the app in the development mode
+
+1. Move into your actual work directory (replace `<work-dir>`):
+   Example: cd <work-dir>/io-app-assistance-form
+2. Launch `npm install` in your terminal, wait for the installation of the packages to finish.
+3. Launch `npm start`
+
+If you want to see what these commands are for, see the section [Useful scripts](#useful-scripts)
+
 ## How to generate questions/answers
 
 This tool uses a function utility named `utilityFormGenerator` that takes advantage of the library [conversational-form](https://space10-community.github.io/conversational-form/docs/1.0.0/getting-started/) to generate HTML tags based on JSON files contained in src/form.
@@ -23,13 +32,18 @@ If you want to stop the conversational form with an end message, based on an ans
 
 ## Useful scripts
 
+- `npm install` downloads packages and it's dependencies defined in a package.json file and generates a node_modules folder with the installed modules.
 - `npm start` runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 - `npm run build` create a minified bundle
 - `npm test` launches the test runner in the interactive watch mode
 - `npm run eject` eject webpack configuration **- TO AVOID -**
 
-## How to deploy the app
+## How to deploy
 
 This step explains how to deploy your app on a server, this makes _io-app-assistance-form_ public, allowing other users to see your app using a URL.
-First of all, launch `npm run build` in your terminal, this creates a build folder inside the root directory, which bundles your app and minifies it into HTML, CSS, and JavaScript files.
-Now, you can use various platforms for deploying your build folder.
+
+1. Move into your actual work directory (replace `<work-dir>`):
+   Example: cd <work-dir>/io-app-assistance-form
+2. Launch `npm run build` in your terminal, this creates a build folder inside the root directory, which bundles your app and minifies it into HTML, CSS, and JavaScript files.
+3. Launch `npm run start:build` to test if your build works properly in the development mode. Open [http://localhost:5000](http://localhost:5000) to view it in the browser
+4. Now, you can use various platforms for deploying your build folder.
